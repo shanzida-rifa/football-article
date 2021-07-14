@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+
+/* CSS utilities starts */
 header{
     background-color: #2D25A0;
-}
-.banner{
-     
-    margin: 0;
-    padding: 0;
 }
 
 body{
@@ -15,21 +12,12 @@ body{
     background-color: white;
 }
 
-img{
-    width: 100%;
-}
+/* CSS utilities ends */
 
-.button{
-    background-color: #E02C6D;
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.button:hover{
-    padding: 12px 22px;
-    transition: 0.1s;
+.banner{
+     
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -37,9 +25,9 @@ img{
     margin: auto;
 }
 
-/* basic css end */
-
- 
+img{
+    width: 100%;
+}
 /* banner1 and banner2 starts */
 /* banner1 and banner2 is vice-versa, so I've done it in a same CSS section */
 
@@ -70,7 +58,7 @@ img{
 }
 
 #banner1 img:hover{
-    transform: translate(-10px, -10px);
+    transform: translate(-50px, -50px);
 }
 
 #banner1 h1,
@@ -78,6 +66,17 @@ img{
     font-size: 64px;
     line-height: 80px;
     margin-bottom: 30px;
+}
+.button:hover{
+    padding: 12px 22px;
+    transition: 0.1s;
+}
+.button{
+    background-color: #E02C6D;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 /* banner1 and banner2 ends */
@@ -156,3 +155,25 @@ footer p{
     font-size: 18px;
 }
 /* footer section end */
+/* media quaries */
+/* mobile device */
+@media only screen and (max-width:688px) {
+#banner1 .container, #banner2 .container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.container{
+        width: 100%;
+    } 
+/* .info{
+background-color: crimson;
+flex-direction: column;
+} */
+#article .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+    
