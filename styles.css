@@ -10,6 +10,8 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 /* CSS utilities ends */
@@ -162,14 +164,15 @@ footer p{
     align-items: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    align-content: space-between;
+}
+#banner1 .image, #banner2 .image{
+    width: 60%;
 }
 .container{
         width: 100%;
     } 
-/* .info{
-background-color: crimson;
-flex-direction: column;
-} */
 #article .container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
