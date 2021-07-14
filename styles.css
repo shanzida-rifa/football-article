@@ -86,7 +86,7 @@ img{
 #article .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap:27px;
+    grid-column-gap:30px;
     grid-row-gap:25px;
     margin-left: 50px auto;
 }
@@ -142,7 +142,7 @@ footer i{
     font-size: 32px;
     background-color: rgb(194, 189, 189);
     color: #969BAB;
-    radius: 50%;
+    border-radius: 50%;
     padding: 5px;
     margin-right: 15px;
 }
