@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+header{
+    background-color: #2D25A0;
+}
+.banner{
+     
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+img{
+    width: 100%;
+}
+
+.button{
+    background-color: #E02C6D;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.button:hover{
+    padding: 12px 22px;
+    transition: 0.1s;
+}
+
+.container{
+    width: 1160px;
+    margin: auto;
+}
+
+/* basic css end */
+
+ 
+/* banner1 and banner2 starts */
+/* banner1 and banner2 is vice-versa, so I've done it in a same CSS section */
+
+#banner1 .container, 
+#banner2 .container{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    align-items: center;
+       
+    color: white;
+}
+
+#banner1 .info,
+#banner2 .info{
+    width: 45%;
+    height: 400px;
+}
+
+#banner1 .image,
+#banner2 .image{
+    width: 70%; 
+}
+
+#banner1 img, 
+#banner2 img{
+ transition: transform .5s ease-in-out;
+}
+
+#banner1 img:hover{
+    transform: translate(-10px, -10px);
+}
+
+#banner1 h1,
+#banner2 h1{
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+
+/* banner1 and banner2 ends */
+
+/* article section start */
+#article .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:27px;
+    grid-row-gap:25px;
+    margin-left: 50px auto;
+}
+
+article{
+background: white;
+padding: 20px;
+box-shadow: 0px 0px 40px 0px #00000026;
+
+}
+
+article h3{
+    font-size: 28px;
+}
+/* article section end */
+
+/* highlight section css start */
+#banner2 h1{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+#banner2 p{
+    margin: 20px 0 30px;
+}
+
+#banner2 .container{
+    color: black;
+}
+/* highlight section css end */
+
+/* footer section start */
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+   justify-content: center;
+}
+
+
+footer .footer-img{
+    width: 400px;
+}
+
+footer img{
+    width: 100%;       
+}
+
+
+footer i{
+    font-size: 32px;
+    background-color: rgb(194, 189, 189);
+    color: #969BAB;
+    radius: 50%;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+footer i:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    margin-top: 25px;
+    font-size: 18px;
+}
+/* footer section end */
